@@ -136,15 +136,3 @@ for (let i = 0, len = parallaxItems.length; i < len; i++) {
 }
 
 });
-
-// Popup 
-document.querySelectorAll(".card-box img").forEach(image => {
-    image.onclick = () => {
-        document.querySelector(".images-popup").style.display = 'block';
-        document.querySelector(".images-popup img").src = image.getAttribute("src");
-    }
-});
-
-document.querySelector(".images-popup span").onclick = () => {
-    document.querySelector(".images-popup").style.display = 'none' ;
-}
